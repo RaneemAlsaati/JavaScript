@@ -1,152 +1,195 @@
 # Homework
 
-## Step 1: Recap/Read
+## Why should i even do this homework?
+Functions and conditions are some of the basic building blocks of javascript. Functions ensure that we dont repeat ourselves when writing code. Conditions ensures that we can handle different cases when programming.
 
-- Have a look at [The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
-- Go through the review of [last week](../Week1/review.md) (Work in progress, update this week :wrench:)
-- Go through the review of [this week](../Week2/review.md) (work in progress, update this week :nut_and_bolt:)
+## Javascript warmup
+Just like last homework, lets **warmup our brain**!
 
+Do these freecodecamp challenges. We know this seems like a lot, but the tasks are not so big, so hang in there! If you get stuck on one of the tasks, just go to the next and then return to the difficult task later on.
 
-## Step 2: Javascript warmup part one
-Just like last time, lets warmup our brain!
-Go back to FreeCodeCamp, start where you left off and finish the rest of the Basic JavaScript challenges. We know this seems like a lot, but the tasks are not so big, so hang in there! 
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/passing-values-to-functions-with-arguments/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/passing-values-to-functions-with-arguments/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/assignment-with-a-returned-value/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/introducing-else-if-statements/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/logical-order-in-if-else-statements/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/chaining-if-else-statements/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-odd-numbers-with-a-for-loop/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-odd-numbers-with-a-for-loop/
+- [ ] https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop/
 
-Please make sure you REALLY understand the exercises below:
-
-- https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays/
-- https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/build-javascript-objects/
-- https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/add-new-properties-to-a-javascript-object/
-
-
-## Step 3: Javascript warmup part two
-
-1. Create a function that returns an empty object. 
-2. Create a new variable called ```timeObject``` and assign it to the result of calling the previous function
-3. Inside the function, add a key to the object called time with the value of the number 12
-4. Log out ```timeObject```. It should look like this:
-```js
-{
-    time: 12,
-}
-```
+Please add your freecodecamp username as answer for this exercise!
 
 ---
-
-1. Create a function that returns an array with with 3 empty objects.
-2. Call the function and assign the return of the function to a variable called ```colorObjects``` (like we did in the previous exercise)
-3. Change the array so that all the objects have one key called color. Make every object have a different color
-4. Log out ```colorObjects```
-5. Give the function 3 parameters called ```color1```, ```color2``` and ```color3```. The parameters should control the color of the 3 objects. ```color1``` sets the color of the first object and so on. 
-6. Call the function with 3 colors and log out ```colorObjects```. ```colorObjects``  should look like this:
-```js
-[{
-    color: 'red',
-},{
-    color: 'blue',
-},{
-    color: 'yellow',
-}]
-```
-If the colors you called the function with were red, blue and yellow.
-
-7. For every object in the array log out the color of the object. Hint use a for loop and read [Here](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/objects.md) to check how to get the value of an object.
-
----
-
-8. Today is Sunday and you ask your friend in how many days you are meeting. If the friend says
-I will see you in 9 days. The output should be Tuesday. You should get the today's day from the system.
-So typical console output is:
-
-``Today is: Sunday``    
-``How many days to meet : 9``  
-``We are meeting on : Tuesday``  
-
-Hint: use remainder operator
 
 ## Step 3: Smart-ease - Goes Global!
 Following the massive success of Smart-ease's first couple of products things have been quite hectic at Smart-ease's shared office space. The phone is constantly ringing from journalists wanting to interview the genius behind the success and the greatest developers want to work for you. [Wired](www.wired.com) wrote an article with the headline "Smart-ease as good as Smarties"
 
 BUT people are asking: What will be the next product that truly defines Smart-ease as the startup of the century?
 
-As always Smart-ease starts by helping people fix their problems. So lets venture out into the real world and see what we find:
+### Flight booking fullname function
+Even for a startup as successful as Smart-ease there needs to be money in the bank. A customer from a flight booking website has asked for our help creating a specific part of their application:
+When a user books a flight they **write their firstname and surname**, but when the ticket is printed a **fullname should be displayed**. It is our responsibility to create that.
 
-### NOnoN0nOYes (Note taking app)
-> You are sitting at a meeting. A person is presenting some interesting thought that you want to write down. You check your bag, but realise that you forgot to bring your notepad. Hmm you check the internet for an online solution. But you need to signup for them all, too bad... Maybe this could be a worthwhile problem so solve. Lets create a simple and easy to use notepad 📝
+Create a function called `getFullname` that returns a fullname. 
+It should have two parameters: `firstname` and `surname`. 
 
-#### Save a note
-The first thing we will create is the functionality to save a note:
-Create a variable called ```notes``` and assign it to an empty array.
-Create a function called ```addNote```. The ```addNote``` has two parameters: ```note``` and ```noteId```. The ```note``` parameter is a string. and the ```noteId``` is a number.
-The ```addNote``` function shall push an object to the notes array. This object has two keys: note and noteId, that corresponds to the parameters. The value of the keys should be the value of the corresponding parameters. 
-
-#### Get a note
-Now a user can add a note, but what if a user wants to see a specific note, but only remembers the id? Lets create that functionality for him:
-Create a function called ```getNoteFromId```. The function has one parameter called ```id```. When calling this function with an id it should return the relevant note object that corresponds to the id. If no id is specified or if the id is not a number, log out an error string. 
-Hint: Use a for loop.
-
-#### Read all notes
-Now a user can both add and get a note. What if the user just wants to read all his notes? Lets also create that functionality:
-Create a function ```showAllNotes```. When calling it the function should log this string out for every note:
-"The note with id: 1, has the following note text: "some example note"."
-
-#### Unique feature
-Suddenly you get this great idea for making the note app even better! 
-
-Come up with a unique feature you think would make this app better. Write down the idea and see if you can implement it. If it is too hard to implement try and ask in the slack channel :)
-
-### CactusIO-interactive (Smart phone usage app)
-> After a long day you come home to relax. The first thing you do is find your phone and start watching some youtube. Then check facebook, and then reading some news. Suddently a hour has passed. What happened to all that time you think to yourself. Maybe we can create some program to help with this problem! What if we could help users manage their smart phone usage?
-
-Its going to work like this: A user can add smartphone activities. Then he can see a status on how his smartphone usage is going. 
-
-
-#### Adding an activity
-Lets create the first part of the functionality that is adding activities.
-
-Create a variable called ```activities``` that stores all activities of the day. What type of variable would you think would make sense?
-Create a function called ```addActivity```. It should have three parameters: ```date```, ```activity``` and ```duration```. The ```date``` should be a string, the ```activity``` a string and the ```duration``` a number. To save the activity push an object that contains the date, the activity and the duration to the activities variable. 
-
-Now a user can add an activity by writing:
-```
-addActivity('23/7-18', 'Youtube', 30);
-
-/*
-activities should now look like this
-[{
-    date: '23/7-18',
-    activity: 'Youtube',
-    duration: 30,
-}]
-*/
+```js
+getFullname('Benjamin', 'Hughes'); // returns "Benjamin Hughes"
 ```
 
-Just adding activities wont help the user very much, we need to add some functionality to show the user how his smart phone usage is going.
+Now try to create two variables `fullname1` and `fullname2` these two variables should be assigned to the return of calling the `getFullname` function. 
 
+Log out the two fullnames.
 
-#### Show my status
-Create a function called ```showStatus```. This function should use the activities variable and return a string saying the following:
-"You have added 3 activities. They amount to 78 min. of usage"
+#### Formal fullname
+On the flight website the user has the possibility to **check a checkbox** that **indicates** if the user wants to be **adressed formally**. Lets also change `getFullname` to include support for formal name. 
+
+Create an extra parameter `useFormalName` that is a boolean. If it is true the function should add a `Lord` in front of the name. 
+
+```js
+getFullname('Benjamin', 'Hughes', true); // returns "Lord Benjamin Hughes"`
+getFullname('Benjamin', 'Hughes', false); // returns "Benjamin Hughes"
 ```
-showStatus(activities); // will log out this "You have added 3 activities. They amount to 78 min. of usage"
+
+What do we do if `useFormalName` is not defined?
+
+### Event application
+Another customer has contacted us. He works for a secret company that rimes with foogle. The customer works on their calendar application. They need some functionality to help with writing what weekday an event is held. 
+
+You specify how many days from today an event is being held. The function then figures out what weekday the event is being held. Here is an example:
+
+Today is Sunday and the event is in 5 days. Therefore the event will be held on a friday.
+
+```js
+// With todays weekday a tuesday
+console.log(getEventWeekday(9)); // Logs out "Thursday"
+
+// With todays weekday a Friday
+console.log(getEventWeekday(2)); // Logs out "Sunday"
 ```
-Now what happens if we call ```showStatus``` and ```activities``` is empty? We need to take that into consideration: If ```activities``` is empty log out a string that says: "Add some activities before calling showStatus"
 
-#### Usage limit
-A user asks us if it is possible to set a limit for his smartphone usage. "Off course it is" we promptly reply! 
-We need to store that limit somewhere, but where and what type should this be?
-So how should it work? When ```showStatus``` is called and the users usage is above the limit he set. Log out the following string: "You have reached your limit, no more smartphoning for you!"
+You should get the today's day from the system.  
 
-#### Extra feature
-Come up with one feature you think would be helpful for this program.
+Hint: use remainder operator, array indexes and investigate new Date in js. 
 
-Optional
-* Lets improve the ```addActivity```, so that we dont need to specify the date, but the function automatically figures out what the date is. Check out this link: https://stackoverflow.com/a/34015511
-* Improve the ```showStatus``` function by only showing the number of actitivies for that specific day.
-* Create a function for calculating the activity a user has spent the most time on.
----
+### What if i just walked
+> Traveling to a new place is fantastic when flying. It only takes a short amount of time and is very convenient. Imagine not being able to fly, but you had to walk to your destination. How long time would that take? lets find out:
+
+Lets create a function that given 2 coordinates returns the transport duration in hours. The transportation types can be: Fly, train, car, bike, walking, jumping, walking and doing the [worm](https://www.youtube.com/watch?v=Y8mmBGWv9iM)
+
+![worm dance](https://media.giphy.com/media/xT1R9LX7DnsCzHquTS/giphy.gif)
+
+Here is an example of two coordinates. To find lat and lon use [this site](https://www.latlong.net/) 
+- *Copenhagen*: 55.686111, 12.565661
+- *Århus*: 56.153362, 10.215830
+
+The function should have 5 parameters: `lat1`, `lon1`, `lat2`, `lon2` and `transportationType`
+
+| Transport type | Speed in km/h |
+|-------------|----------------|
+| Fly | 800 |
+| train |200 |
+| Car | 100 |
+| Bike | 12 |
+| Walk | 5 |
+| Jump | 3 |
+| Crawl | 1 |
+| [Worm](https://www.youtube.com/watch?v=Y8mmBGWv9iM) | 0.1 |
+
+Use the following code from [stackoverflow](https://stackoverflow.com/questions/18883601/function-to-calculate-distance-between-two-coordinates-shows-wrong) to get the distance in km between two coordinates
+
+```js
+function getDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // km
+    dLat = toRad(lat2-lat1);
+    dLon = toRad(lon2-lon1);
+    lat1 = toRad(lat1);
+    lat2 = toRad(lat2);
+
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    const d = R * c;
+    
+    return d;
+}
+
+// Converts numeric degrees to radians
+function toRad(Value) {
+    return Value * Math.PI / 180;
+}
+
+const cphToAarhurDist = getDistance(55.686111, 12.565661, 56.153362, 10.215830);
+console.log(cphToAarhurDist); // logs out 155.3500706998908
+
+```
+
+Calling the function with a given lat1, lon1, lat2, lon2 and a transportation type should return the time in hours it would take to travel that distance.
+
+Try calling the function on some different coordinates.
+
+#### Get nicely printed time *optional*
+Instead of just returning the number of hours in a decimal point. Lets return the string with the relevant transportation time: "Your transportation time will be 3 hours and 23 minutes". 
+
+### Candy helper
+> We are at the candystore. We have taken some shovels of the **caramel-strawberry-cola-lemon-gravy winegums**, a few of the **banana chocolate diesel-motors** and a handful of the **salmon-potato covered toffee encrusted pizzas**. But what is all this worth? And can you even afford it? 
+
+Let's solve this problem with some functions. 
+
+#### addCandy function
+Create a function called `addCandy`. It has two parameters:
+- `candy` - specifies the candy type. Could be 'sweet, chocolate, toffee or chewing-gum'
+- `weight` - specifies the weigth of the candy in grams
+
+The function should add the price of the candy to an array called `boughtCandy` using [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) 
+
+Here is an example of the usage:
+
+```js
+addCandy('sweet', 20); // Adds the price of 20 grams of sweets to the array boughtCandy
+```
+
+Candy table prices
+
+| Candy type | Price per gram |
+|-------------|----------------|
+| Sweet | 0.5 |
+| Chocolate | 0.7 |
+| Toffee | 1.1 |
+| Chewing-gum | 0.03 |
 
 
-## Step 4: Rover the Robot (Optional)
+#### Can i buy more?
+Now create a variable called `amountToSpend` and assign it to `Math.random() * 100`. You can read about `Math.random` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+Now create a new function called `canBuyMoreCandy`. This function returns a boolean indicating if the user can buy more candy using the `boughtCandy` array. 
+
+Try use the function by adding some pieces of candy and checking if you can buy more. 
+
+If the user can buy more the `console.log` the following: "You can buy more, so please do!"
+
+If the user cant buy more `console.log` the following: "Enough candy for you!"
+
+Hint: Use a for loop to calculate the total price of the candy pieces. 
+
+*Optional* Use a [while loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) instead of a for loop.
+
+#### Add candy and check if the user can buy more *optional*
+Create a function where the user try and add some candy. what parameters should it have? 
+
+If the user has funds, add the piece of candy using the `addCandy` function and log out the following "Please keep shopping for candy". How can we check if the user has enough funds?
+
+If the user does not have enough funds, do not add the candy and log out the following "You can not add more candy"
+
+## Step 4: Rover the Robot *Optional*
 Go and try out this cool game: [roverjs.com](http://roverjs.com), written by one of the HYF teachers from Amsterdam, [Joost Lubach](https://github.com/joost). There are different levels. Solve the chapter up until and including the variables chapter. There might be a small price for completing that!
 
 ## Step 5: Hand in Homework:
